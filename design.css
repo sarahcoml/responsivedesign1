@@ -1,0 +1,362 @@
+body {
+    background-color: #ffffff;
+    /* font-family: Arial, sans-serif; */
+}
+
+.navbar {
+    background: linear-gradient(51deg, #810007 27.66%, #5D0005 72.34%);
+    color: #ffffff;
+    flex-shrink: 0;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 80px;
+    display: flex;
+    /* justify-content: space-between;  */
+    align-items: center;
+
+}
+
+.nav-links {
+    display: flex; 
+    /* justify-content: space-between; */
+}
+
+.nav-link {
+    color: #FFF;
+    font-family: "Source Sans Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.375px;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.nav-link:hover {
+    color: #b0b0b0;
+}
+
+.nav-link:active {
+    color: #FFAD00;
+}
+
+.logo {
+    color: #FFF;
+    font-family: "Seria Sans";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.38px;
+    text-transform: uppercase;
+    padding-left: 100px;
+    padding-right: 270px;
+}
+
+.disclaimer {
+    color: #000;
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.375px;
+    padding-bottom: 5px;
+}
+
+.search {
+    width: 18px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.checkout {
+    width: 40px;
+    height: 25px;
+    flex-shrink: 0;
+    padding-left: 25px;
+}
+
+.slides {
+    max-width: 1350px;
+    position: relative;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 35px;
+    color: white;
+    font-size: 40px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.prev:hover,
+.next:hover {
+    color: #2A57BA;
+}
+
+.dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #2A57BA;
+}
+
+.sidenav {
+    position: fixed;
+    top: 70%;
+    transform: translateY(-50%);
+    width: 40px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #2A57BA;
+    right: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .sidenav {
+        position: fixed;
+        top: 70%;
+        transform: translateY(-50%);
+        width: 40px;
+        padding-left: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 10px 0px 0px 10px;
+        background-color: #2A57BA;
+        right: 0;
+        display: block; 
+    }
+}
+
+.top-picks {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.38px;
+    text-transform: uppercase;
+}
+
+.rating {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-picks-container {
+    display: flex;
+}
+
+.top-picks-container img {
+    width: 100%; 
+    height: auto;
+    margin-right: 10px;
+    box-shadow: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+.button {
+    width: 150px;
+    font-size: 20px;
+    height: 58px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    background: #2A57BA;
+    color: #FFF;
+    margin-top: 900px;
+    margin-bottom: 50px;
+}
+
+.button:hover {
+    background-color: #6282C9;
+}
+
+.about-us {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #ffffff;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-bio {
+    flex: 2;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about-bio p {
+    color: #000;
+    font-family: "Source Sans Pro";
+    font-size: 30px;
+    font-style: normal;
+    /* font-weight: lighter; */
+    line-height: 126.667%;
+    letter-spacing: -1.9px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+
+.aboutustitle {
+    padding-top: 150px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.38px;
+    text-transform: uppercase;
+}
+
+
+.working-hours {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #810007;
+    padding: 20px; 
+    /* border-radius: 10px; Optional: Add border radius for rounded corners */
+    padding-bottom: 50px;
+}
+
+.working-hours h2 {
+    color: #ffffff; 
+    font-family: "Source Sans Pro";
+    font-size: 45px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.working-hours table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFF; 
+    border-radius: 10px; 
+}
+
+.working-hours table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.working-hours table tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+.working-hours table tr:first-child {
+    font-weight: bold;
+    background-color: #2A57BA; 
+    color: #fff;
+}
+
+.working-hours table tr:first-child td {
+    border: none;
+}
+
+
+/* Mobile devices */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    .logo, .search {
+        display: none;
+    }
+
+    .top-picks-container {
+        flex-direction: column;
+    }
+
+    .about-us {
+        flex-direction: column;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+        padding-left: 40px;
+    }
+
+    .logo, .search {
+        display: none;
+    }
+
+    .top-picks-container {
+        flex-direction: row;
+    }
+
+    .about-us {
+        flex-direction: row;
+    }
+}
+
+/* Desktops and laptops */
+@media only screen and (min-width: 1025px) {
+    /* The CSS rules here will apply to desktops and laptops */
+}
+
+/* Large screens */
+@media only screen and (min-width: 1825px) {
+    /* The CSS rules here will apply to large screens */
+}

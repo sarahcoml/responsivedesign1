@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <style>
+        /* Additional styles for responsiveness */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .logo {
+                padding: 10px;
+            }
+            .search,
+            .checkout {
+                display: none;
+            }
+            .sidenav {
+                display: none;
+            }
+            .top-picks-container img {
+                width: 100%;
+            }
+        }
+    </style>
+    <title>Kebbeh African Providence</title>
+</head>
+
+<body>
+    <div class="disclaimer">Order Online But Pick Up In Person</div>
+    <div class="navbar">
+        <a href="#Home" class="nav-link">HOME</a>
+        <a href="#menu" class="nav-link">MENU</a>
+        <a href="#orderonline" class="nav-link">ORDER ONLINE</a>
+        <a href="#contactus" class="nav-link">CONTACT US</a>
+        <div class="logo">KEBBEH AFRICAN PROVIDENCE</div>
+
+        <img src="images/search.png" class="search" alt="Search here"></img>
+        <img src="images/checkout.png" class="checkout" alt="Checkout"></img>
+    </div>
+
+    <div class="slides">
+        <div class="slide-image">
+            <img src="images/slideshone.png" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="sidenav">
+        <img src="images/phoneicon.png" style="width:60%" alt="Call here">
+        <br>
+        <br>
+        <img src="images/questionicon.png" style="width:70%" alt="FAQ">
+        <!-- <a href="#about">About</a> -->
+        <!-- <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a> -->
+    </div>
+
+    <div class="top-picks">Top Picks</div>
+    <img src="images/starsicon.png" class="rating" style="width:7%" alt="Search here">
+
+    <div class="top-picks-container">
+        <img src="images/toppick1.png" alt="Image 1">
+        <img src="images/toppick2.png" alt="Image 2">
+        <img src="images/toppick3.png" alt="Image 3">
+    </div>
+
+    <div>
+        <button class="button">Order Here</button>
+    </div>
+
+    <div class="aboutustitle">About Us</div>
+
+    <div class="about-us">
+        <div class="about-image">
+            <img src="images/aboutusimg.png" alt="About Us Image">
+        </div>
+        <div class="about-bio">
+            <p>Our menu is a tribute to the vast culinary landscape of Ghana, featuring a splendid array of dishes that cater to every palate. From the fiery heat of Jollof rice to the comforting embrace of Fufu and light soup, our dishes are prepared with the utmost care and respect for tradition. We take pride in showcasing the unique flavors of Ghanaian spices, herbs, and grains, all of which are carefully selected for their quality and authenticity.</p>
+        </div>
+    </div>
+
+    <div class="working-hours">
+        <h2>Working Hours</h2>
+        <table>
+            <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>11:00 AM - 06:15 PM</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>11:00 AM - 06:15 PM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>11:00 AM - 06:15 PM</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>11:00 AM - 06:15 PM</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>11:00 AM - 06:15 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>11:00 AM - 06:15 PM</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
